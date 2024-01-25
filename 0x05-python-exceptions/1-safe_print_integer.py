@@ -1,4 +1,4 @@
-#!/bin/python3
+#!/usr/bin/python3
 """A function that safely prints an integer list.
 
 Parameters:
