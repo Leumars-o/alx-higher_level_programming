@@ -1,15 +1,18 @@
 #!/usr/bin/python3
-"""An empty class
+"""Class definition and usage
 
-Parameters:
-    - None
-Return:
-    - None
-Description:
-    - An empty class Square that defines as square.
-    - No modules should be imported.
+Attributes:
+    - Square: a class defining a square
 """
 
 
 class Square:
-    pass
+    """class defines a Square.
+
+    Empty class
+
+    Args:
+        None
+    Return:
+        None
+    """
