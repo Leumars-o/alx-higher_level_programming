@@ -2,9 +2,9 @@
 """A module that creates a class Square.
 
 Classes:
-    - Square: this defines the square class
+    Square: this defines the square class
 Description:
-    - No modules should be imported
+    No modules should be imported
 """
 
 
