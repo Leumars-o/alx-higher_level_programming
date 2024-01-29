@@ -12,14 +12,16 @@ Description:
 
 
 class Square:
+    """A class that defines a square
+
+    Methods:
+        - __init__: Method initializes the square class
+        _ area: calculates the area of the square
+    """
     def __init__(self, size=0):
         """A method that initializes the square class
+        sets '__size' to 'size' if argument is valid
 
-        Attributes:
-            - size: integer value, size of the square
-                * by default is 0
-                * must be an integer
-                * must be greater than 0
         Return:
             - None
         """
