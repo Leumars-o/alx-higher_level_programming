@@ -1,8 +1,11 @@
 #!/usr/bin/python3
-"""A module that creates a class Square.
+"""Creation and usage of a square
+
+A module that creates a class Square.
 
 Classes:
     Square: this defines the square class
+
 Description:
     No modules should be imported
 """
