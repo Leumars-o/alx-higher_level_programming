@@ -99,4 +99,4 @@ class Rectangle:
         Return:
             - Returns a string representation of the rectangle instance
         """
-        return ("Rectangle({},{})".format(self.__width, self.__height))
+        return ("Rectangle({}, {})".format(self.__width, self.__height))
