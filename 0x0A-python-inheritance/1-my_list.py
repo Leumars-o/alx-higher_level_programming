@@ -15,9 +15,12 @@ class MyList(list):
         - print_sorted: A method that prints a sorted list
 
     Return:
-        - Prints a sorted list
+        - None (Prints a sorted list)
     """
 
     def print_sorted(self):
+        """
+        A method that sorts and prints the list
+        """
         self.sort()
         print(self)
