@@ -21,12 +21,6 @@ Trying to pass a non-integer argument
     TypeError: name must be an integer
 
 
-integer_validator method bool value:
-    >>> bg.integer_validator("zar", True)
-    Traceback (most recent call last):
-    TypeError: zar must be an integer
-
-
 Trying to pass a negative value
     >>> bg = BaseGeometry()
     >>> bg.integer_validator("name", -5)
@@ -115,3 +109,9 @@ Passing None to method
     Traceback (most recent call last):
               ...
     TypeError: age must be an integer
+
+
+integer_validator method bool value:
+    >>> bg.integer_validator("zar", True)
+    Traceback (most recent call last):
+    TypeError: zar must be an integer
