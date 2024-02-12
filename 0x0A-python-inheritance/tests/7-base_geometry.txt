@@ -2,9 +2,8 @@
 Test cases for 7-base_geometry.txt
 ===========================================================
 
-case 0: import
-
->>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+Import class from Module:
+    >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 Trying to print the area
     >>> bg = BaseGeometry()
