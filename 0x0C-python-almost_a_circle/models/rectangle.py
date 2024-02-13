@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""A module that defines a cRectangle subclass
+"""A module that defines a Rectangle subclass
 
 Classes:
     Rectangle: A class that defines and creates rectangles with 'Base'
@@ -148,3 +148,4 @@ class Rectangle(Base):
                         self.__init__(self.width, self.height, self.x, self.y)
                     else:
                         setattr(self, key, value)
+
