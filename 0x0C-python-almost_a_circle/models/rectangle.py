@@ -1,30 +1,5 @@
 #!/usr/bin/python3
-"""A module that defines a class `Base`
-
-Classes:
-    Base: base class that manages 'id' attributes
-"""
-
-
-class Base:
-    """A class that defines and manages 'id' attributes
-
-    Methods:
-        - __init__: intialization method
-    """
-    __nb_objects = 0
-
-    def __init__(self, id=None):
-        """Initialization method
-
-        Args:
-            id (_type_, int): _description_. Defaults to None.
-        """
-        if id is not None:
-            self.id = id
-        else:
-            Base.__nb_objects += 1
-            self.id = Base.__nb_objects
+from .base import Base
 
 
 class Rectangle(Base):
@@ -106,3 +81,34 @@ class Rectangle(Base):
         if value < 0:
             raise ValueError("y must be >= 0")
         self.__y = value
+
+    def area(self):
+        return (self.__width * self.__height)
+
+    def display(self):
+        for j in range(self.__y):
+            print()
+        for i in range(self.height):
+            print(" " * self.__x + "#" * self.__width)
+
+    def __str__(self):
+        string = f"[Rectangle] ({self.id}) {self.__x}/{self.__y} " \
+            f"- {self.__width}/{self.__height}"
+        return string
+
+    def update(self, *args, **kwargs):
+        attributes = ['id', 'width', 'height', 'x', 'y']
+        if args and len(args) != 0:
+            for i, arg in enumerate(args):
+                if i < len(attributes):
+                    if i == 0 and arg is None:
+                        self.__init__(self.width, self.height, self.x, self.y)
+                    else:
+                        setattr(self, attributes[i], arg)
+        elif kwargs and len(kwargs) != 0:
+            for key, value in kwargs.items():
+                if key in attributes:
+                    if key == 'id' and value is None:
+                        self.__init__(self.width, self.height, self.x, self.y)
+                    else:
+                        setattr(self, key, value)
