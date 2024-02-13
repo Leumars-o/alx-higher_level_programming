@@ -18,6 +18,15 @@ class Rectangle(Base):
         __init__: initalization method
     """
     def __init__(self, width, height, x=0, y=0, id=None):
+        """A rectangle initializing method
+
+        Args:
+            width (int): width of the rectangle
+            height (int): height of the rectangle
+            x (int, optional): Defaults to 0.
+            y (int, optional): Defaults to 0.
+            id (int, optional): id of the rectangle. Defaults to None.
+        """
         super().__init__(id)
         if type(width) != int:
             raise TypeError("width must be an integer")
@@ -89,20 +98,41 @@ class Rectangle(Base):
         self.__y = value
 
     def area(self):
+        """A method that returns the area of a Rectangle
+
+        Returns:
+            int: Area of Rectangle
+        """
         return (self.__width * self.__height)
 
     def display(self):
+        """A method that prints a representation of the Rectangle
+        with '#' character
+        """
         for j in range(self.__y):
             print()
         for i in range(self.height):
             print(" " * self.__x + "#" * self.__width)
 
     def __str__(self):
+        """A __str__ method that returns a string with information
+        about the rectangle
+
+        Returns:
+            str: A string that describes the parameters of the Rectangle
+        """
         string = f"[Rectangle] ({self.id}) {self.__x}/{self.__y} " \
             f"- {self.__width}/{self.__height}"
         return string
 
     def update(self, *args, **kwargs):
+        """A method that updates the Rectangle using *args and **kwargs
+        functions
+
+        Args:
+            @args: a tuple of elements to be passed into the Rectangle
+            @kwargs: a Dictionary of elements to be passed to the rectangle
+        """
         attributes = ['id', 'width', 'height', 'x', 'y']
         if args and len(args) != 0:
             for i, arg in enumerate(args):
