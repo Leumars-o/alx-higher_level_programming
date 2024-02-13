@@ -1,4 +1,10 @@
 #!/usr/bin/python3
+"""A module that defines a cRectangle subclass
+
+Classes:
+    Rectangle: A class that defines and creates rectangles with 'Base'
+    as its Superclass
+"""
 from .base import Base
 
 
