@@ -28,6 +28,14 @@ class Base:
             self.id = Base.__nb_objects
 
     def to_json_string(list_dictionaries):
+        """A method for sharing data representation using JSON
+
+        Args:
+            list_dictionaries (list): A list of dictionaries
+
+        Returns:
+            dict: A JSON string representation of list_dictionaries
+        """
         if list_dictionaries is None:
             return "[]"
         json_data = json.dumps(list_dictionaries)
