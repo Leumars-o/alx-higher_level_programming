@@ -68,6 +68,12 @@ class Base:
 
     @classmethod
     def create(cls, **dictionary):
+        """A class method that updates the class Base
+        and returns an instance with all attributes already set
+
+        Returns:
+            list: a list of a new instance of a square or rectangle
+        """
         if dictionary and dictionary != {}:
             if cls.__name__ == "Rectangle":
                 new_instance = cls(1, 1)
