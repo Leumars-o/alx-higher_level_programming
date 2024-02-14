@@ -3,28 +3,10 @@
 A module that defines a class `BaseGeometry`
 
 Classes:
-    -BaseGeometry
+    - BaseGeometry
+    - Rectangle
 """
-
-
-class BaseGeometry:
-    """
-    A class that defines and creates Geometric shapes
-
-    Methods:
-        area: raises an exception when called
-        integer_validator
-    """
-    def area(self):
-        raise Exception("area() is not implemented")
-
-    def integer_validator(self, name, value):
-        if type(value) != int:
-            raise TypeError(f"{name} must be an integer")
-        if value <= 0:
-            raise ValueError(f"{name} must be greater than 0")
-        self.value = value
-        self. name = name
+BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 
 class Rectangle(BaseGeometry):
