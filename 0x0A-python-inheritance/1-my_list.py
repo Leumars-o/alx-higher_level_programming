@@ -17,10 +17,9 @@ class MyList(list):
     Return:
         - None (Prints a sorted list)
     """
-
     def print_sorted(self):
         """
         A method that sorts and prints the list
         """
-        self.sort()
-        print(self)
+        a = sorted(self)
+        print(a)
