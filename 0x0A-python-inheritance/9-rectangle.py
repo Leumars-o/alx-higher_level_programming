@@ -1,9 +1,8 @@
 #!/usr/bin/python3
 """
-A module that defines a class `BaseGeometry`
+A module that defines a class `Rectangle`
 
 Classes:
-    - BaseGeometry
     - Rectangle
 """
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
@@ -18,6 +17,7 @@ class Rectangle(BaseGeometry):
 
     Methods:
         - __init__: intialization method
+        - area: calculates the area of the rectangle
     """
     def __init__(self, width, height):
         """A method that initializes the Rectangle class
