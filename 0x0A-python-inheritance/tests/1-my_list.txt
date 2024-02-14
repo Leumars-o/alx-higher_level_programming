@@ -27,7 +27,7 @@ case 1: common case
 
 case 2: object not defined
 
->>> MyList = __import__('1-my_list_list').MyList
+>>> MyList = __import__('1-my_list').MyList
 >>> my_list10.print_sorted()
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
