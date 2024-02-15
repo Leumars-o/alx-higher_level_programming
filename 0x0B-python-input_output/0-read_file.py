@@ -1,6 +1,8 @@
-#!/usr/bin/pthon3
-    """A function that reads from a text file
-    """
+#!/usr/bin/python3
+"""A function that reads from a text file
+"""
+
+
 def read_file(filename=""):
     """Function reads a texts file and prints to stdout
 
