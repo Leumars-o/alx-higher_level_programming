@@ -19,6 +19,7 @@ def append_args():
         json_list = load_from_json_file(filename)
     except FileNotFoundError:
         json_list = []
-    json_list += arg_list
+    for arg in arg_list:
+        json_list.append(arg)
     save_to_json_file(json_list, filename)
     return json_list
