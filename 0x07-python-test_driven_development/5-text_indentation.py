@@ -14,7 +14,16 @@ def text_indentation(text):
     if not isinstance(text, str):
         raise TypeError("text must be a string")
     special_chars = ('.', '?', ':')
-    for character in text:
+
+    for i, character in enumerate(text):
+        if i == 0 and character == " ":
+            continue
+
+        elif character == " " and (
+            text[i - 1] in special_chars or text[i - 1] == " "
+        ):
+            continue
+
         if character in special_chars:
             print(character)
             print()
