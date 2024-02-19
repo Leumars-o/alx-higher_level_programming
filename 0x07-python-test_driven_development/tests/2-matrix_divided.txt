@@ -82,7 +82,6 @@ floats. If ``matrix`` is not a list, a TypeError is raised.
     TypeError: matrix must be a matrix (list of lists) of integers/floats
 
 Note that an empty list will raise the TypeError.
-
 ::
 
     >>> matrix = []
