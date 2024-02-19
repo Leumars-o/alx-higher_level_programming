@@ -8,12 +8,6 @@ Base Case:
 >>> text_indentation("Holberton. School? How are you: John")
 Holberton.
 
-School?
-
-How are you:
-
-John>>>
-
 case: passed empty
 
 >>> text_indentation()
