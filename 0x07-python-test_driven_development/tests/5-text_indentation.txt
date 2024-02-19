@@ -5,7 +5,7 @@ Test cases for 5-text_indentation.py
 
 Base Case:
 
->>> text_indentation("Holberton. School? How are you:    John")
+>>> text_indentation("Holberton. School? How are you: John")
 Holberton.
 
 School?
