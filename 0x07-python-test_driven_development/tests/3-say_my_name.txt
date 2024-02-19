@@ -61,3 +61,10 @@ case: tuple passed
 Traceback (most recent call last):
     ...
 TypeError: first_name must be a string
+
+case: first name: string, last name: not string
+
+>>> say_my_name("sam", 9)
+Traceback (most recent call last):
+    ...
+TypeError: last_name must be a string
