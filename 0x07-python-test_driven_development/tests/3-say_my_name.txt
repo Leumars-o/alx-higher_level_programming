@@ -1,0 +1,61 @@
+test cases for 3-say_my_name.py
+----------------------------------------
+This module provides a function that prints My name is <first name> <last name>
+
+>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+Base case:
+
+>>> say_my_name("John", "Smith")
+My name is John Smith
+
+>>> say_my_name("Walter", "White")
+My name is Walter White
+
+>>> say_my_name("Bob")
+My name is Bob 
+
+case: no string
+
+>>> say_my_name()
+TypeError: say_my_name() missing 1 required positional argument: 'first_name'
+
+case: int passed
+
+>>> say_my_name(10, 5)
+Traceback (most recent call last):
+    ...
+TypeError: first_name must be a string
+
+>>> say_my_name(10)
+Traceback (most recent call last):
+    ...
+TypeError: first_name must be a string
+
+case: list passed
+
+>>> say_my_name(['sam', 'smith'])
+Traceback (most recent call last):
+    ...
+TypeError: first_name must be a string
+
+case: dict passed
+
+>>> say_my_name({first_name: 'sam', last_name:'smith' })
+Traceback (most recent call last):
+    ...
+NameError: name 'first_name' is not defined
+
+case: bool passed
+
+>>> say_my_name(True)
+Traceback (most recent call last):
+    ...
+TypeError: first_name must be a string
+
+case: tuple passed
+
+>>> say_my_name(('sam', 'smith'))
+Traceback (most recent call last):
+    ...
+TypeError: first_name must be a string
