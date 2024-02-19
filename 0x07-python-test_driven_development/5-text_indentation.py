@@ -1,4 +1,4 @@
-#!/usr/bin/pyhton3
+#!/usr/bin/python3
 """A module that provides a funtion that prints a formatted
 text
 """
