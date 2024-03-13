@@ -1,5 +1,5 @@
 -- Script that creates another table in the database and adds multiple rows
-CREATE TABLE
+CREATE TABLE IF NOT EXISTS
 second_table (
     id INT,
     name VARCHAR(256),
