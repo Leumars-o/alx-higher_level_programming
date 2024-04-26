@@ -15,7 +15,4 @@ def find_peak(list_of_integers):
     if not list_of_integers:
         return None
     numbers = sorted(list_of_integers)
-    try:
-        return numbers[-1]
-    except (ValueError, IndexError):
-        return None
+    return numbers[-1]
