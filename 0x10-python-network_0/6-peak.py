@@ -12,7 +12,6 @@ def find_peak(list_of_integers):
         int: the peak value, or None if list is empty
     """
 
-    if not list_of_integers:
-        return None
-    numbers = sorted(list_of_integers)
-    return numbers[-1]
+    if list_of_integers:
+        numbers = sorted(list_of_integers)
+        return numbers[-1]
