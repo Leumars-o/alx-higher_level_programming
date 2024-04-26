@@ -13,5 +13,5 @@ def find_peak(list_of_integers):
     """
 
     if list_of_integers:
-        numbers = sorted(list_of_integers)
-        return numbers[-1]
+        list_of_integers.sort()
+        return list_of_integers[-1]
